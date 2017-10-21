@@ -1,0 +1,35 @@
+button {
+    width: 90px;
+    height: 60px;
+}
+
+
+#wrapper {
+    background-color: aliceblue;
+}
+
+#calculator {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding:50px;
+    background-color:silver;
+}
+
+#screen {
+    width: 400px;
+    border:1px;
+    border-color: #000;
+    height: 60px;
+    background-color: lightgray;
+
+}
+
+.buttonrow {
+    width: 400px;
+}
+
+#emptyrow {
+    width: 300px;
+}
+
