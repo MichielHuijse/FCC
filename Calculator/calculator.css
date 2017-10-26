@@ -9,6 +9,11 @@ button {
     font-family: 'Orbitron', sans-serif;
     color: gainsboro;
     background-color: dimgrey;
+    text-shadow: 1px 0 2px black;
+}
+button:active {
+    box-shadow: inset -3px -1px 4px #4B4B4B, 2px 1px 3px #4B4B4B;
+    transform: translateY(1px);
 }
 
 #AC {
@@ -19,29 +24,50 @@ button {
     background-color: lightsalmon;
 }
 #divide, #times, #minus, #plus {
-    background-color: lightseagreen;
+    background-color: lightblue;
 }
 
 #wrapper {
-    background-color: aliceblue;
+    background-color: #ef9420;;
+    padding: 3em;
 }
 
 #calculator {
     margin-left: auto;
     margin-right: auto;
     width: 500px;
-    background-color:silver;
+    padding-top: 10px;
+    background-color: rgba(255, 248, 220, 0.47);
     font-size: 0;
-    padding-top: 50px;
     padding-bottom: 44px;
     box-shadow: inset 0 0 10px #000000, 32px 19px 21px #574B4B;
     border-radius: 50px;
 }
 
+#top {
+    height: 200px;
+    margin-left: 23px;
+    margin-right: 23px;
+    background-color: #53578e;
+    box-shadow: inset 0 0 10px #000000, 4px 5px 17px 0px #574B4B;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#brand {
+    font-size: 36px;
+    margin-top: -173px;
+    text-align: center;
+    color: #d8cbc3;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 1px 0 2px black;
+}
+
 #screen {
     width: 400px;
-    height: 70px;
+    height: 96px;
     background-color: lightgray;
+    margin-top: 10px;
     margin-left: 50px;
     color: black;
     font-family: 'Orbitron', sans-serif;
@@ -52,11 +78,14 @@ button {
 }
 
 #output {
-    margin: 9px;
-    font-size: 54px;
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 73px;
+    transform: scale(.7, 1);
     font-stretch: ultra-condensed;
     display: inline-flex;
     float: right;
+    background-color: #dcdbdb;
 }
 
 .buttonrow {
