@@ -1,5 +1,5 @@
-//@Todo Each button function adds the value of the button to an array.
-//@The array is evaluated when = is pressed.
+//Each button function adds the value of the button to an array.
+//The array is evaluated when = is pressed.
 //This returns an output value which is printed in the screen.
 
 $(document).ready(function() {
