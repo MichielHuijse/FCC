@@ -1,0 +1,30 @@
+#timer {
+  text-align: center;
+  font-size: 100px;
+  font-family: "Droid Sans";
+  clear: both;
+}
+
+
+.panel {
+  text-align: center;
+}
+
+.paneltext {
+  display: inline;
+}
+
+button, #setWorkTime, #setBreakTime {
+  display: inline;
+  }
+
+button {
+  background-color: lightgrey;
+  border-radius: 10px;
+  FONT-SIZE: large;
+  COLOR: BLACK;
+}
+
+#reset {
+  float: right;
+}

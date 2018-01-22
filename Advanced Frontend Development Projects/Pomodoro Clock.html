@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="panel">
+    <p class="paneltext">Worktime</p>
+    <p class="paneltext">Breaktime</p>
+</div>
+
+<div class="panel">
+
+    <button onclick="decreaseWorkTime();">-</button>
+    <p id="setWorkTime">5</p>
+    <button onclick="increaseWorkTime();">+</button>
+
+    <button onclick="pomodoro.decbreak();">-</button>
+    <p id="setBreakTime">25</p>
+    <button onclick="increaseBreakTime();">+</button>
+</div>
+
+<div class="panel">
+    <button onclick="this.start();">Start</button>
+    <button onclick="this.stop();">Pause</button>
+</div>
+
+<p id="timer">00:00</p>
+
+<button id="reset" onclick="reset();">Reset</button>
+
+</body>
+
+<script src="Pomodoro Clock.js"></script>
+</html>
+
+
+
+
+
