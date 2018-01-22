@@ -1,14 +1,6 @@
 
 // Javascript code for Pomodoro clock
 
-/*
-var breakTime =5;
-var workTime =25;
-var workTimeSeconds =59, breakTimeSeconds=59;
-*/
-
-
-
   function Timer() {
 
     var interval;
@@ -18,7 +10,6 @@ var workTimeSeconds =59, breakTimeSeconds=59;
 
     setInterval(function(){
 
-      
         }, 1000);
 
     this.start = function () {
@@ -36,69 +27,34 @@ var workTimeSeconds =59, breakTimeSeconds=59;
       //resets timer
     };
 
-    this.decbreak = function () {
-      breakTime =-1;
-      document.getElementById(#setBreakTime).innerHTML = breakTime;
+    this.decBreak = function () {
+      if( breakTime > 0) {
+        breakTime = breakTime -1;
+        $('#setBreakTime').text(breakTime);
+      }
     };
 
-    this.incbreak = function () {
-      breakTime =-1;
+    this.incBreak = function () {
+      breakTime = breakTime + 1;
+      $('#setBreakTime').text(breakTime);
     };
 
-    this.decwork = function () {
-      workTime =-1;
+    this.decWork = function () {
+      if( workTime > 0) {
+        workTime = workTime - 1;
+        $('#setWorkTime').text(workTime);
+      }
     };
 
-    this.incwork = function () {
-      workTime =+1;
+    this.incWork = function () {
+      workTime = workTime + 1;
+      $('#setWorkTime').text(workTime);
     };
   }
 
 
 var pomodoro = new Timer();
 
-function Timer() {
-
-  var interval;
-  var offset;
-  var breakTime = 5;
-  var workTime = 25;
-
-
-  this.start = function () {
-
-  };
-
-  this.stop = function () {
-
-    //should pause timer
-
-  };
-
-  this.reset = function () {
-    //resets timer
-  };
-
-  this.decbreak = function () {
-    breakTime =-1;
-    document.getElementById(#setBreakTime).innerHTML = breakTime;
-  };
-
-  this.incbreak = function () {
-    breakTime =-1;
-  };
-
-  this.decwork = function () {
-    workTime =-1;
-  };
-
-  this.incwork = function () {
-    workTime =+1;
-  };
-}
-
-
-var pomodoro = new Timer();
 
 
 

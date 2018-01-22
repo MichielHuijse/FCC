@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Pomodoro Clock</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -14,13 +15,13 @@
 
 <div class="panel">
 
-    <button onclick="decreaseWorkTime();">-</button>
-    <p id="setWorkTime">5</p>
-    <button onclick="increaseWorkTime();">+</button>
+    <button onclick="pomodoro.decWork();">-</button>
+    <p id="setWorkTime">25</p>
+    <button onclick="pomodoro.incWork();">+</button>
 
-    <button onclick="pomodoro.decbreak();">-</button>
-    <p id="setBreakTime">25</p>
-    <button onclick="increaseBreakTime();">+</button>
+    <button onclick="pomodoro.decBreak();">-</button>
+    <p id="setBreakTime">5</p>
+    <button onclick="pomodoro.incBreak();">+</button>
 </div>
 
 <div class="panel">
@@ -34,7 +35,7 @@
 
 </body>
 
-<script src="Pomodoro Clock.js"></script>
+<script src="Pomodoro%20Clock.js"></script>
 </html>
 
 
